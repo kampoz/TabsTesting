@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Created by Kamil on 06.08.2017.
  */
 
-public class MyTabsView extends LinearLayout implements OnClickListener {
+public class CustomizeTabsView extends LinearLayout implements OnClickListener {
 
   private MyTabsViewCallback callback;
   private ImageButton ib0;
@@ -26,23 +26,22 @@ public class MyTabsView extends LinearLayout implements OnClickListener {
   private ArrayList<View> tabsList = new ArrayList<>();
 
   public interface MyTabsViewCallback {
-
     void showFragmentAtIndex(int index);
   }
 
 
-  public MyTabsView(Context context) {
+  public CustomizeTabsView(Context context) {
     super(context);
     init();
   }
 
-  public MyTabsView(Context context,
+  public CustomizeTabsView(Context context,
       @Nullable AttributeSet attrs) {
     super(context, attrs);
     init();
   }
 
-  public MyTabsView(Context context,
+  public CustomizeTabsView(Context context,
       @Nullable AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
     init();

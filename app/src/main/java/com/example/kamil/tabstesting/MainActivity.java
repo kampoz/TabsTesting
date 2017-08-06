@@ -5,14 +5,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import com.example.kamil.tabstesting.MyTabsView.MyTabsViewCallback;
+import com.example.kamil.tabstesting.CustomizeTabsView.MyTabsViewCallback;
 
 public class MainActivity extends AppCompatActivity implements MyTabsViewCallback{
 
   private SectionPageAdapter sectionPageAdapter;
-
   private ViewPager mViewPager;
-  private MyTabsView myTabsView;
+  private CustomizeTabsView customizeTabsView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +19,14 @@ public class MainActivity extends AppCompatActivity implements MyTabsViewCallbac
     setContentView(R.layout.activity_main);
 
     sectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
-    myTabsView = (MyTabsView) findViewById(R.id.mtv_tabs);
-    myTabsView.setCallback(this);
+    customizeTabsView = (CustomizeTabsView) findViewById(R.id.mtv_tabs);
+    customizeTabsView.setCallback(this);
 
     mViewPager = (ViewPager) findViewById(R.id.container);
     mViewPager.addOnPageChangeListener(new OnPageChangeListener() {
       @Override
       public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        myTabsView.animateStripeToIndex(position);
+        customizeTabsView.animateStripeToIndex(position);
       }
 
       @Override
@@ -41,11 +40,6 @@ public class MainActivity extends AppCompatActivity implements MyTabsViewCallbac
       }
     });
     setUpViewPager(mViewPager);
-
-    /*
-    TabLayout tabLayout = (TabLayout)findViewById(R.id.tl_tabs);
-    tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.black));
-    tabLayout.setupWithViewPager(mViewPager);*/
   }
 
   private void setUpViewPager(ViewPager viewPager) {
