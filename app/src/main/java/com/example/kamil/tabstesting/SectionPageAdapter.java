@@ -13,7 +13,7 @@ import java.util.List;
 public class SectionPageAdapter extends FragmentPagerAdapter {
 
   private final List<Fragment> mFragmentList = new ArrayList<>();
-  private final List<String> mFragmentsTitleList = new ArrayList<>();
+  //private final List<String> mFragmentsTitleList = new ArrayList<>();
 
 
   public SectionPageAdapter(FragmentManager fm) {
@@ -22,13 +22,13 @@ public class SectionPageAdapter extends FragmentPagerAdapter {
 
   public void addFragment(Fragment fragment, String title){
     mFragmentList.add(fragment);
-    mFragmentsTitleList.add(title);
+    //mFragmentsTitleList.add(title);
   }
 
-  @Override
+  /*@Override
   public CharSequence getPageTitle(int position) {
     return mFragmentsTitleList.get(position);
-  }
+  }*/
 
   @Override
   public Fragment getItem(int position) {

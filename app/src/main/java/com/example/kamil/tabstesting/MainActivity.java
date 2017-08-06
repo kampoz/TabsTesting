@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements MyTabsViewCallbac
     customizeTabsView = (CustomizeTabsView) findViewById(R.id.mtv_tabs);
     customizeTabsView.setCallback(this);
 
-    mViewPager = (ViewPager) findViewById(R.id.container);
+    mViewPager = (ViewPager) findViewById(R.id.vp_fragments);
     mViewPager.addOnPageChangeListener(new OnPageChangeListener() {
       @Override
       public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -31,12 +31,10 @@ public class MainActivity extends AppCompatActivity implements MyTabsViewCallbac
 
       @Override
       public void onPageSelected(int position) {
-
       }
 
       @Override
       public void onPageScrollStateChanged(int state) {
-
       }
     });
     setUpViewPager(mViewPager);

@@ -7,18 +7,18 @@
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:weightSum="5">
+    android:weightSum="13">
 
     <ImageButton
       android:id="@+id/ib_0"
       android:layout_width="0dp"
       android:layout_height="match_parent"
-      android:layout_weight="1"/>
+      android:layout_weight="3"/>
 
     <View
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_weight="1"/>
+      android:layout_weight="2"/>
 
     <TextView
       android:id="@+id/ib_1"
@@ -26,25 +26,25 @@
       android:layout_height="match_parent"
       android:text="REWARDS"
       android:gravity="center"
-      android:layout_weight="1"/>
+      android:layout_weight="3"/>
 
     <View
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_weight="1"/>
+      android:layout_weight="2"/>
 
     <ImageButton
       android:id="@+id/ib_2"
       android:layout_width="0dp"
       android:layout_height="match_parent"
-      android:layout_weight="1"/>
+      android:layout_weight="3"/>
 
   </LinearLayout>
 
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:weightSum="5"
+    android:weightSum="13"
     android:orientation="horizontal">
 
     <View
@@ -52,7 +52,7 @@
       android:layout_width="0dp"
       android:layout_height="5dp"
       android:background="@color/colorAccent"
-      android:layout_weight="1"/>
+      android:layout_weight="3"/>
 
   </LinearLayout>
 

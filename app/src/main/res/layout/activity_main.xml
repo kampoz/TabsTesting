@@ -10,13 +10,13 @@
   android:fitsSystemWindows="true"
   tools:context="com.example.kamil.tabstesting.MainActivity">
 
-  <com.example.kamil.tabstesting.MyTabsView
+  <com.example.kamil.tabstesting.CustomizeTabsView
     android:id="@+id/mtv_tabs"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
 
   <android.support.v4.view.ViewPager
-    android:id="@+id/container"
+    android:id="@+id/vp_fragments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 

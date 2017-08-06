@@ -64,13 +64,6 @@ public class CustomizeTabsView extends LinearLayout implements OnClickListener {
     tabsList.add(ib2);
 
     vStripe = findViewById(R.id.v_stripe);
-
-//    ib0.post(new Runnable() {
-//      @Override
-//      public void run() {
-//        vStripe.getLayoutParams().width = ib0.getMeasuredWidth();
-//      }
-//    });
   }
 
   public void animateStripeToIndex(int index) {
