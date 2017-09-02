@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:weightSum="13">
+
+    <ImageButton
+      android:id="@+id/ib_1_0"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:background="@null"
+      android:src="@drawable/pin"
+      android:layout_weight="3" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="2" />
+
+    <ImageButton
+      android:id="@+id/ib_1_1"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="3"
+      android:gravity="center"
+      android:background="@null"
+      android:src="@drawable/coin"
+      android:textSize="20sp" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="2" />
+
+    <ImageButton
+      android:id="@+id/ib_1_2"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:background="@null"
+      android:src="@drawable/search"
+      android:layout_weight="3" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="13">
+
+    <View
+      android:id="@+id/v_stripe_1"
+      android:layout_width="0dp"
+      android:layout_height="2dp"
+      android:layout_weight="3"
+      android:background="@color/colorBlack" />
+
+  </LinearLayout>
+
+</LinearLayout>
