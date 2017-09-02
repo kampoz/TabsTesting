@@ -59,7 +59,7 @@
     <View
       android:id="@+id/v_stripe_1"
       android:layout_width="0dp"
-      android:layout_height="2dp"
+      android:layout_height="1dp"
       android:layout_weight="3"
       android:background="@color/colorBlack" />
 
